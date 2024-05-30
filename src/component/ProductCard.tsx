@@ -2,8 +2,9 @@
 import { useCart } from '../context/CartContext';
 import './ProductCard.css'
 export const ProductCard = ({product}) => {
-   const {addToCart} = useCart()
+   const {addToCart,cartList} = useCart()
    const {name, price, image} = product;
+   
    
   return (
     <div className="productCard">
