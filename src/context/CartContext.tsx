@@ -50,10 +50,13 @@ export const CartProvider = ({ children }) => {
     removeFromCart,
   };
 
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+  return <CartContext.Provider value={value}>
+           {children}
+         </CartContext.Provider>;
 };
 
 export const useCart = () => {
   const context = useContext(CartContext);
   return context;
 };
+
