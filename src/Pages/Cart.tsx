@@ -3,6 +3,7 @@ import React from 'react'
 import { CartCard } from '../component'
 import { useTitle } from '../hooks/useTitle'
 import { useCart } from '../context/CartContext'
+
 export const Cart = () => {
    useTitle("Cart")
    const {total,cartList} = useCart()
